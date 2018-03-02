@@ -1,0 +1,10 @@
+INSERT INTO `smcmanager`.`persona` (`nombre`, `estadoCivil`, `edad`, `fNacimiento`, `potencial`, `genero`) VALUES ('Eduardo Ferrer', 'Soltero', '21', '1996-08-06', '5', 'Masculino');
+INSERT INTO `smcmanager`.`persona` (`nombre`, `estadoCivil`, `edad`, `fNacimiento`, `potencial`, `genero`) VALUES ('Adriana Ferrer', 'Soltero', '25', '1992-07-22', '8', 'Femenino');
+INSERT INTO `smcmanager`.`relacion` (`Persona_idPersona`, `Persona_idPersona1`, `tipo`) VALUES ('1', '2', 'Hermanos');
+INSERT INTO `smcmanager`.`ingreso` (`cantidad`, `tipo`, `Persona_idPersona`) VALUES ('5000', 'Quincenal', '1');
+INSERT INTO `smcmanager`.`ingreso` (`cantidad`, `tipo`, `Persona_idPersona`) VALUES ('20000', 'Mensual', '2');
+INSERT INTO `smcmanager`.`residencia` (`calle`, `numeroInterior`, `numeroExterior`, `colonia`, `pais`, `especificaciones`) VALUES ('Amacuzac', '254', '0', 'Hermosillo', 'Mexico', 'Atras de GNP');
+INSERT INTO `smcmanager`.`persona_has_residencia` (`Persona_idPersona`, `Residencia_idResidencia`) VALUES ('1', '1');
+INSERT INTO `smcmanager`.`persona_has_residencia` (`Persona_idPersona`, `Residencia_idResidencia`) VALUES ('2', '1');
+INSERT INTO `smcmanager`.`contrato` (`nombre`, `fVencimiento`, `fAdquisicionInicial`, `fPago`, `Persona_idPersona`) VALUES ('Seguro Gastos Medicos', '2020-01-01', '2018-02-27', '2018-03-27', '1');
+INSERT INTO `smcmanager`.`contrato` (`nombre`, `fVencimiento`, `fAdquisicionInicial`, `fPago`, `Persona_idPersona`) VALUES ('Seguro de Vida', '2020-01-01', '2018-02-27', '2018-03-27', '2');
